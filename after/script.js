@@ -8,12 +8,21 @@ inputString = "I LIKE pizza!";
 getNumberOfVowels();
 switchSolution();
 
+function optimalSolution() {
+    for (letter of inputString) {
+        if (vowels.includes(letter)) {
+            vowelCounter++;
+            console.log(`vowelCounter: ${vowelCounter}`);
+        }
+    }
+}
+
 function getNumberOfVowels() {
-    
+
 }
 
 function cleanString() {
-    
+
 }
 
 function switchSolution() {
@@ -35,7 +44,7 @@ function switchSolution() {
                 vowelCounter++
                 break;
             default:
-                // do nothing
+            // do nothing
         }
         console.log(`counter value ${vowelCounter}`);
     }
