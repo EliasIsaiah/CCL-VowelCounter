@@ -1,9 +1,8 @@
-let counter = 0;
+let vowelCounter = 0;
 let inputString = "";
-let numberOfVowels = 0;
 let vowels = ["a", "e", "i", "o", "u"];
 
-inputString = "cafeteria";
+inputString = "I LIKE pizza!";
 
 
 getNumberOfVowels();
@@ -21,23 +20,23 @@ function switchSolution() {
     for (letter of inputString) {
         switch (letter) {
             case 'a':
-                counter++
+                vowelCounter++
                 break;
             case 'e':
-                counter++
+                vowelCounter++
                 break;
             case 'i':
-                counter++
+                vowelCounter++
                 break;
             case 'o':
-                counter++
+                vowelCounter++
                 break;
             case 'u':
-                counter++
+                vowelCounter++
                 break;
             default:
                 // do nothing
         }
-        console.log(`counter value ${counter}`);
+        console.log(`counter value ${vowelCounter}`);
     }
 }
